@@ -65,6 +65,12 @@ type MessageRequest struct {
 	Attachments []ThreadAttachment `json:"attachments,omitempty"`
 }
 
+type MessageContentRequest struct {
+	Type     string    `json:"type"`
+	Text     string    `json:"text"`
+	ImageURL *ImageURL `json:"image_url,omitempty"`
+}
+
 type MessageFile struct {
 	ID        string `json:"id"`
 	Object    string `json:"object"`
