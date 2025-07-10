@@ -67,7 +67,7 @@ type MessageRequest struct {
 
 type MessageContentRequest struct {
 	Type     string    `json:"type"`
-	Text     string    `json:"text"`
+	Text     string    `json:"text,omitempty"`
 	ImageURL *ImageURL `json:"image_url,omitempty"`
 }
 
